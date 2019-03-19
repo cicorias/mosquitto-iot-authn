@@ -1,0 +1,1 @@
+docker run -it --rm --name mosquitto -p 1883:1883 -p 9001:9001 -v $(pwd)/env/mosquitto.conf:/mosquitto/config/mosquitto.conf -v $(pwd)/env/password_file:/mosquitto/password_file -v $(pwd)/env/data:/mosquitto/data -v $(pwd)/env/log:/mosquitto/log eclipse-mosquitto $@
